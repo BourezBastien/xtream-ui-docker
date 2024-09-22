@@ -16,7 +16,7 @@ RUN apt-get update && apt-get upgrade -y && apt-get install libxslt1-dev libcurl
 USER xtreamcodes
 
 # Télécharger le fichier install.py depuis GitHub
-RUN wget https://raw.githubusercontent.com/username/repo/main/install.py -O /home/xtreamcodes/install.py
+RUN wget https://raw.githubusercontent.com/BourezBastien/xtream-ui-docker/refs/heads/main/install.py
 
 # Exécuter les scripts Python
 RUN python3 install itertools
